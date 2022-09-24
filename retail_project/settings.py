@@ -193,4 +193,4 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_FILE_STORAGE= 'whitenoise.storage.CompressedManifestStaticFileStorage'
 
 
-ALLOWED_HOSTS = ['simple-retail-api.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', 'simple-retail-api.herokuapp.com', '127.0.0.1']
