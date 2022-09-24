@@ -28,9 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-w10(56z5k_^_h8amove3dx(6na4hy8cw5ed0vckq7qjvo+t3jn'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = []
+DEBUG = False
 
 
 # Application definition
@@ -193,3 +191,6 @@ EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_FILE_STORAGE= 'whitenoise.storage.CompressedManifestStaticFileStorage'
+
+
+ALLOWED_HOSTS = ['simple-retail-api.herokuapp.com']
