@@ -29,8 +29,7 @@ class UserManager(BaseUserManager):
         return user
 
 
-AUTH_PROVIDERS = {'facebook': 'facebook', 'google': 'google',
-                  'twitter': 'twitter', 'email': 'email'}
+AUTH_PROVIDERS = {'email': 'email'}
 
 
 class User(AbstractBaseUser, PermissionsMixin):
